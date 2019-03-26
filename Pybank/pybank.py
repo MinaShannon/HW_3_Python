@@ -1,3 +1,4 @@
+#PyBank
 import csv
 import os
 import sys
@@ -6,7 +7,6 @@ months=[]
 profit_loss=[]
 profit_loss_one_forward=[]
 total=0
-datemax=[]
 month_change=[]
 with open(csvpath,newline="") as csvfile:
     csvreader=csv.reader(csvfile,delimiter=",")

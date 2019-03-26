@@ -1,5 +1,4 @@
 # PyPoll
-#if __name__=="__main__"
 import csv
 import os
 import sys
@@ -32,7 +31,8 @@ propCorrey=round(Correy/total*100,0)
 propLi=round(Li*100/total,0)
 propOTooley=round(OTooley*100/total,0)
 totals_list=[Khan,Correy,Li,OTooley]
-results=[(x,y)for x,y in zip(unique_candidates,totals_list)]
+filler_candidatelist=["Khan","Correy","Li","O'Tooley"]
+results=[(x,y)for x,y in zip(filler_candidatelist,totals_list)]
 winner=[x for x, y in results if y==max(totals_list)]
 print("Elecetion Results")
 print("----------------------------")
